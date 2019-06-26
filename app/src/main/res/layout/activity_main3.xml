@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id = "@+id/scriptLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/scriptView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@drawable/textview_border"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:scrollbars="vertical" />
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장/적용"
+        android:background="@drawable/textview_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id = "@+id/fullLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+
+
+    <RelativeLayout
+        android:id = "@+id/homeLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        tools:context="xyz.jhnah917.SunrinBot.MainActivity">
+
+        <TextView
+            android:id="@+id/tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center"
+            android:text="구글 플레이 스토어에서 Wear OS by Google를 설치해주세요."
+            android:textColor="#FF0000"
+            android:layout_gravity  = "center|center"
+            android:layout_alignParentTop="@+id/perBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:id = "@+id/perBtn"
+            android:text = "권한 설정"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="100dp"/>
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background = "@drawable/textview_border"
+            android:gravity = "center_horizontal|center_vertical"
+            android:id = "@+id/botPower"
+            android:text = "봇 전원"
+            android:textSize="15dp"
+            android:layout_gravity  = "right|top"
+            android:layout_below="@+id/perBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop = "15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background = "@drawable/textview_border"
+            android:text="로그 보기"
+            android:textSize = "15dp"
+            android:id = "@+id/log"
+            android:layout_below="@+id/botPower"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:id = "@+id/script"
+            android:text = "스크립트 관리"
+            android:layout_below="@+id/log"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/script"
+            android:id="@+id/spinnerTxt"
+            android:text="명령어 접두어 설정 : *"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/spinnerTxt"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

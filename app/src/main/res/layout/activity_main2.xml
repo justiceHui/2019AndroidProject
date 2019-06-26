@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id = "@+id/scriptLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/logView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@drawable/textview_border"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:hint=""
+        android:textSize="15dp"
+        android:scrollbars="vertical" />
+    <!-- java에 텍스트뷰.setMovementMethod(new ScrollingMovementMethod()); 추가-->
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="초기화"
+        android:background="@drawable/textview_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+
+</LinearLayout>
